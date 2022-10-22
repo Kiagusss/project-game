@@ -21,7 +21,7 @@
         exit;
     }
 
-    $Sql = 'INSERT into users (username,password,name) VALUES("'.$username.'","'.$password.'","'.$name.'")';
+    $Sql = 'INSERT into users (id,username,password,name) VALUES("'.$id.'","'.$username.'","'.$password.'","'.$name.'")';
     if (mysqli_query($conn, $Sql)) {
         echo "successs";
     }
